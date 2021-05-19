@@ -3,11 +3,12 @@ html {
     margin: 0;
     min-width: 375px;
     color: white;
-    background-color: #0E1846; 
+    background-color: #0E1846;
+    font-family: 'Montserrat Alternates', sans-serif; 
 }
 
 .nav {
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -16,31 +17,26 @@ html {
     left: 0px;
     top: 0px;
     background: #0E1846;
+    z-index: 1;
 }
 
 .menu-button {
     background-color: transparent;
     color: white;
     border: none; 
-    width: 49px;
-    height: 25px;
-    left: 292px;
-    margin-left: auto;
-    padding: 0; 
+    width: 50px;
+    height: 50px; 
+    padding-right: 20px;
+    font-size: 30px; 
 }
 
 .logo {
-    width: 248px;
-    height: 55px;
     margin-right: auto;
     padding-left: 25px;  
-    font-family: 'Montserrat Alternates', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
-    display: flex;
-    align-items: center;
     text-align: center;
 }
 
@@ -81,41 +77,106 @@ html {
     box-shadow:-1000px 1000px 0 1000px rgba(0,0,0,.50); 
 }
 
-/*about*/
-.about-title {
-    position: absolute;
-    width: 207px;
-    height: 65px;
-    margin: auto 25px;
-    top: 106px;
-    font-family: 'Montserrat Alternates';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
+/*mission*/
+
+.mission-statement {
     display: flex;
+    margin-top: 84px;
+    justify-content: center; 
+}
+
+.mission {
+    padding-left: 19px; 
+}
+
+.mission-statement p {
+    font-size: calc(100% + 3vw);
+}
+
+/*about*/ 
+.about {
+    display: flex; 
+    justify-content: space-around;
     align-items: center;
+    padding-top: 3rem;
 }
 
 .spacex {
-    position: absolute;
-    width: 141px;
-    height: 135px;
-    left: 20px;
-    top: 220px;
+    position: relative; 
+    display: block;
+    width: 50%;
+    margin: 0 5px; 
+}
+
+.spacex img {
+    width: 100%;
+    max-height: 500px;
+    flex-basis: 1;
     border-radius: 35px;
+    box-shadow: 10px 10px black;
+}
+.description {
+    width: 50%;
+    position: relative;
+    display: block;
+    flex-basis: 1;
+    font-size: calc(80% + 2vw);
+    text-align: center;
 }
 
-.about-content p{
-    position: absolute;
-    width: 207px;
-    height: 136px;
-    left: 168px;
-    top: 220px;
-    font-family: 'Montserrat Alternates';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.5vw;
-    line-height: 22px;
+/*launches*/
+
+.launches {
+    display: flex; 
+    justify-content: center;
 }
 
+.launch-title {
+    margin: 30px
+}
+
+.launch-title p {
+    font-size: calc(80% + 2vw);
+}
+
+/*launch info*/
+
+.launch-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.launch {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ship-logo {
+    position: relative; 
+    display: flex;
+    width: 25%;
+    margin: 0 5px;
+}
+
+.info {
+    width: 50%;
+    position: relative;
+    display: block;
+    font-size: calc(80% + 1vw);
+    text-align: left;
+    box-shadow: 10px 10px black;
+}
+
+.ship-logo img{
+    width: 100%;
+    max-height: 500px;
+    border-radius: 5px;
+
+}
+
+span {
+    color: orange;
+}
