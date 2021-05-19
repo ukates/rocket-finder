@@ -1,10 +1,12 @@
-html {
+html, body {
     padding: 0; 
     margin: 0;
     min-width: 375px;
-    color: white;
-    background-color: #0E1846;
-    font-family: 'Montserrat Alternates', sans-serif; 
+    color: black;
+    /*background-color: #0E1846;*/
+    background-color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    height: 100%; 
 }
 
 .nav {
@@ -16,19 +18,19 @@ html {
     height: 84px;
     left: 0px;
     top: 0px;
-    background: #0E1846;
+    background: white;
     z-index: 1;
 }
 
 .menu-button {
     background-color: transparent;
-    color: white;
+    color: black;
     border: none; 
     width: 50px;
     height: 50px; 
     font-size: 30px;
     padding:0;
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 .logo {
@@ -48,7 +50,7 @@ html {
     right: 0px; 
     height: 300px; 
     width: 0px; /*189px*/
-    background-color: #0E1846;
+    background-color: black;
     z-index: 1;
     overflow-x: hidden;
     transition: all .5s;
@@ -83,15 +85,24 @@ html {
 .mission-statement {
     display: flex;
     margin-top: 84px;
-    justify-content: center; 
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-statement img {
+    width: 50%;
+
 }
 
 .mission {
-    padding-left: 19px; 
+    padding-left: 19px;
 }
 
 .mission-statement p {
     font-size: calc(100% + 3vw);
+    background: url('/resources/videos/rocket.mp4');
+    width: 50%;
+
 }
 
 /*about*/ 
@@ -153,6 +164,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-bottom: 20px;
+
 }
 
 .ship-logo {
@@ -169,12 +182,15 @@ html {
     font-size: calc(80% + 1vw);
     text-align: left;
     box-shadow: 10px 10px black;
+    border: black 2px solid;
+    border-radius: 35px; 
 }
 
 .ship-logo img{
     width: 100%;
     max-height: 500px;
-    border-radius: 5px;
+    border-radius: 20px;
+
 
 }
 
